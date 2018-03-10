@@ -7,6 +7,12 @@ let hrPosition = 20
 let minPosition = 130
 let secPosition = 267
 
+var date = new Date()
+// Use get method to extract details from date, eg hr, min, seconds
+let hr = date.getHours()
+let min = date.getMinutes()
+let sec = date.getSeconds()
+
 // Degrees for inline styles for transform on each of the objects
 HOURHAND.style.transform = "rotate(" + hrPosition + "deg)"
 MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)"
